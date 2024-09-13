@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgb(253, 253, 198);
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #4a3f35;
+}
+
+.description {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #6e584b;
+}
+
+.prep-time {
+    position: relative;
+    background-color: rgb(250, 236, 238);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.prep1 {
+    margin-left: 10px;
+    color: #7c503b;
+    position: relative;
+    top: 0;
+}
+
+.prep2 {
+    margin-top: 10px;
+    color: #4a3f35;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #7c503b;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #4a3f35;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.ingredients, .instructions, .nutrition {
+    margin-top: 20px;
+}
+
+strong {
+    color: #7c503b;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.ul1 {
+    padding: 0;
+}
+
+.li1 {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 0 0 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #4a3f35;
+}
+
+.nutrition span {
+    color: #4a3f35;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .prep-time, .ingredients, .instructions, .nutrition {
+        padding: 10px;
+    }
+
+    .prep1, h2 {
+        font-size: 1.3rem;
+    }
+
+    .prep2, ul li, ol li {
+        margin-left: 20px;
+    }
+
+    .li1 {
+        padding: 5px 0;
+    }
+
+    .nutrition span {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .prep-time, .ingredients, .instructions, .nutrition {
+        padding: 5px;
+    }
+
+    .prep1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .prep2, ul li, ol li {
+        margin-left: 15px;
+    }
+
+    .li1 {
+        padding: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    .nutrition span {
+        margin-left: auto;
+    }
+}
